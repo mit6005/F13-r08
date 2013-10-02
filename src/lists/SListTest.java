@@ -22,6 +22,11 @@ public class SListTest {
 		assertEquals((int)x.rest().first(), 1);
 		assertEquals((int)y.first(), 4);
 		assertEquals((int)y.rest().first(), 1);
+		
+		assertTrue(nil.isEmpty());
+        assertFalse(x.isEmpty());
+        assertFalse(x.rest().isEmpty());
+        assertTrue(x.rest().rest().isEmpty());
 	}
 
 }
